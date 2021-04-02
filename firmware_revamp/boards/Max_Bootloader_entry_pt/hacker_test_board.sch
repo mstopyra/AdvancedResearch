@@ -1234,21 +1234,77 @@ F 6 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 12100 3700 60
 	1    11700 3200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:USB_B J1
-U 1 1 606E49A2
-P 9950 3400
-F 0 "J1" H 10007 3867 50  0000 C CNN
-F 1 "USB_B" H 10007 3776 50  0000 C CNN
-F 2 "Connector_USB:USB_B_Lumberg_2411_02_Horizontal" H 10100 3350 50  0001 C CNN
-F 3 " ~" H 10100 3350 50  0001 C CNN
-	1    9950 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9850 3800 9850 3950
 Wire Wire Line
 	9950 3800 9950 3950
 Wire Notes Line
 	9700 2800 11500 2800
+$Comp
+L formula:Conn_01x10 J4
+U 1 1 605754CD
+P 12850 3700
+F 0 "J4" H 12930 3750 50  0000 L CNN
+F 1 "Conn_01x10" H 12930 3659 50  0000 L CNN
+F 2 "footprints:PinHeader_1x10_P2.54mm_Vertical" H 12750 3000 50  0001 C CNN
+F 3 "" H 12850 3700 50  0001 C CNN
+	1    12850 3700
+	1    0    0    -1  
+$EndComp
+Text Label 12550 1800 2    50   ~ 0
+CAN_+
+Text Label 12550 1900 2    50   ~ 0
+CAN_-
+$Comp
+L power:GND #PWR0102
+U 1 1 60591260
+P 12550 2000
+F 0 "#PWR0102" H 12550 1750 50  0001 C CNN
+F 1 "GND" V 12555 1872 50  0000 R CNN
+F 2 "" H 12550 2000 50  0001 C CNN
+F 3 "" H 12550 2000 50  0001 C CNN
+	1    12550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L formula:CONN_01X03 J3
+U 1 1 6057373E
+P 12800 1900
+F 0 "J3" H 12828 1941 50  0000 L CNN
+F 1 "CONN_01X03" H 12828 1850 50  0000 L CNN
+F 2 "footprints:PinHeader_1x03_P2.54mm_Vertical" H 12800 700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-999-1218971.pdf" H 12800 700 50  0001 C CNN
+F 4 "Mouser" H 12800 1900 60  0001 C CNN "MFN"
+F 5 "855-M20-9990346" H 12800 1900 60  0001 C CNN "MPN"
+F 6 "https://www.mouser.com/ProductDetail/Harwin/M20-9990346?qs=sGAEpiMZZMs%252bGHln7q6pmzlZUuX%2f53qj1ROyRKct5o4%3d" H 13200 2500 60  0001 C CNN "PurchasingLink"
+	1    12800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L formula:Conn_01x10 J5
+U 1 1 605A15AD
+P 14050 3700
+F 0 "J5" H 14130 3750 50  0000 L CNN
+F 1 "Conn_01x10" H 14130 3659 50  0000 L CNN
+F 2 "footprints:PinHeader_1x10_P2.54mm_Vertical" H 13950 3000 50  0001 C CNN
+F 3 "" H 14050 3700 50  0001 C CNN
+	1    14050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L formula:USB_MicroB U5
+U 1 1 6067FF03
+P 9950 3400
+F 0 "U5" H 10007 3867 50  0000 C CNN
+F 1 "USB_MicroB" H 10007 3776 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 9900 3750 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/1050170001_sd.pdf" H 9900 3750 50  0001 C CNN
+F 4 "DK" H 10200 3150 50  0001 C CNN "MFN"
+F 5 "WM1399CT-ND" H 10300 3250 50  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/molex-llc/1050170001/WM1399CT-ND/2350885" H 10400 3350 50  0001 C CNN "PurchasingLink"
+	1    9950 3400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10250 3600
+NoConn ~ -2100 -3350
 $EndSCHEMATC
